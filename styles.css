@@ -1,0 +1,168 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1, h2 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 30px; /* Slightly increased size */
+    margin-bottom: 20px;
+    color: #00ffcc;
+    text-align: center;
+    text-shadow: 0 0 8px #00ffcc, 0 0 15px rgba(0, 255, 204, 0.5); /* Increased visibility of glow */
+}
+
+/* Container */
+.container {
+    width: 420px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0, 255, 204, 0.25), 0 0 18px rgba(0, 255, 204, 0.2); /* Slight increase in shadow for visibility */
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #00ffcc;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 255, 204, 0.3); /* Slightly increased glow */
+}
+
+input[type="text"]::placeholder {
+    color: #b3b3b3;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #00ffcc;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #00e6b3;
+    box-shadow: 0 0 8px #00ffcc;
+}
+
+/* Task Lists */
+.list-section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 22px; /* Increased size */
+    color: #00ffcc; /* Ensured it matches the Web3 neon color */
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px #00ffcc, 0 0 12px rgba(0, 255, 204, 0.5); /* Slightly brighter glow for better visibility */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #292929;
+    border: 1px solid #333;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+li.completed {
+    background-color: #004d40;
+    text-decoration: line-through;
+}
+
+button.complete-btn, button.delete-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button.complete-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+button.complete-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 8px #007bff;
+}
+
+button.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: 1px solid #c82333;
+    transition: background-color 0.3s ease;
+}
+
+button.delete-btn:hover {
+    background-color: #c82333;
+    box-shadow: 0 0 8px #dc3545;
+}
+
+/* General Styles for Delete All Button */
+.delete-all-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#deleteAllButton {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#deleteAllButton:hover {
+    background-color: #c82333;
+    box-shadow: 0 0 8px #dc3545;
+}
