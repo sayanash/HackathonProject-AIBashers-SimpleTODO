@@ -52,4 +52,3 @@ document.addEventListener('DOMContentLoaded', function () {
         completedTasks.innerHTML = '';  // Clear completed tasks
     });
 });
-
