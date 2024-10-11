@@ -29,7 +29,7 @@ Click the Delete button to remove a task from the list.
 Project Structure:
 simple-todo-app/
 │
-├── index.html         # The main HTML file
+├── index.html         # The main HTML file.
 ├── style.css          # The CSS file for styling
 └── script.js          # The JavaScript file for functionality
 
